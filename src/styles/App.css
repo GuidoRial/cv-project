@@ -1,6 +1,65 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
 }
 
+.main-container {
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: 80px;
+    clear: both;
+}
 
+.form-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.form-display {
+    background-color: red;
+    width: 100%;
+}
+
+form {
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+
+  font-size: large;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+input[type=text]:focus {
+  border: 1px;
+}
+
+label {
+  font-weight: 700;
+  text-align: left;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0,4s;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: skyblue;
+}

@@ -6,7 +6,7 @@ class Header extends Component {
     constructor() {
         super();
     }
-    remder() {
+    render() {
         return (
             <div className="header">
                 <h1>CV Generator</h1>
