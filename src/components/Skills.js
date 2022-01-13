@@ -35,6 +35,7 @@ class Skills extends Component {
                 {
                     id: uniqid(),
                     skill: "Team player",
+                    
                 },
                 {
                     id: uniqid(),

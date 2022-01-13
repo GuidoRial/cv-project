@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import LeftSide from "./LeftSide";
+import Education from "./Education"
 
 //Tengo que hacer todos los imports aca
 class Main extends Component {
@@ -9,7 +10,13 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <LeftSide />
+                <div>
+                    <LeftSide />
+                </div>
+
+                <div>
+                    <Education />
+                </div>
             </div>
         );
     }
