@@ -9,7 +9,7 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <h1>CV Generator</h1>
+                <h1>RESUME</h1>
             </div>
         );
     }

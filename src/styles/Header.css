@@ -1,4 +1,6 @@
 .header {
+    background-image: linear-gradient(to right, skyblue, white);
     background-color: skyblue;
     padding: 10px;
+    width: 20%;
 }

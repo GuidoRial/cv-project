@@ -1,0 +1,21 @@
+.main-container {
+    display: flex;
+    width: 100%;
+}
+
+.main-container .edit-toggle {
+    border: 1px transparent;
+    height: 50px;
+    width: 125px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.left-side {
+    width: 25%;
+    padding: 10px 25px;
+}
+
+.right-side {
+    width: 75%;
+}

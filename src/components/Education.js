@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import uniqid from "uniqid";
+import "../styles/Education.css"
 
 class Education extends Component {
     constructor() {
@@ -96,74 +97,73 @@ class Education extends Component {
         return (
             <div id="education">
                 <h2>Education</h2>
+
                 {education.map((edu) => {
                     return (
-                        <div>
-                            <div
-                                key={edu.id}
-                                onClick={() => this.handleRemove(edu.id)}
-                            >
-                                <div>
-                                    <p>{edu.date}</p>
-                                    <p>{edu.degree}</p>
-                                </div>
-                                <div>
-                                    <p>{edu.school}</p>
-                                    <p>{edu.location}</p>
-                                    <p>{edu.description}</p>
-                                </div>
+                        <div
+                            key={edu.id}
+                            onClick={() => this.handleRemove(edu.id)}
+                        className="education-container">
+                            <div>
+                                <p>{edu.date}</p>
+                                <p>{edu.degree}</p>
                             </div>
-                            <button
-                                onClick={this.toggleEdit}
-                                className="edit-toggle"
-                            >
-                                Add Education
-                            </button>
-
-                            {edit && (
-                                <form id="educationEdit">
-                                    <label htmlFor="addSchool">School</label>
-                                    <input
-                                        id="newSchool"
-                                        placeholder="School Name..."
-                                        onChange={this.handleSchoolChange}
-                                    />
-
-                                    <label htmlFor="addDate">Date</label>
-                                    <input
-                                        id="newDate"
-                                        placeholder="Add date..."
-                                        onChange={this.handleDateChange}
-                                    />
-                                    <label htmlFor="addDate">Degree</label>
-                                    <input
-                                        id="newDegree"
-                                        placeholder="Add a degree..."
-                                        onChange={this.handleDegreeChange}
-                                    />
-                                    <label htmlFor="newLocation">
-                                        Location
-                                    </label>
-                                    <input
-                                        id="newLocation"
-                                        placeholder="Add location..."
-                                        onChange={this.handleLocationChange}
-                                    />
-                                    <label htmlFor="newDescription">Description</label>
-                                    <input id="newDescription" placeholder="Add a description..."
-                                    onChange={this.handleDescriptionChange}/>
-                                    <button onClick={this.onSubmitEducation}>
-                                        Submit education
-                                    </button>
-                                    <button
-                                        className="edit-toggle"
-                                        onClick={this.toggleEdit}
-                                    >Cancel</button>
-                                </form>
-                            )}
+                            <div>
+                                <p>{edu.school}</p>
+                                <p>{edu.location}</p>
+                                <p>{edu.description}</p>
+                            </div>
                         </div>
                     );
                 })}
+                <button onClick={this.toggleEdit} className="edit-toggle">
+                    Add Education
+                </button>
+
+                {edit && (
+                    <form id="educationEdit">
+                        <label htmlFor="addSchool">School</label>
+                        <input
+                            id="newSchool"
+                            placeholder="School Name..."
+                            onChange={this.handleSchoolChange}
+                        />
+
+                        <label htmlFor="addDate">Date</label>
+                        <input
+                            id="newDate"
+                            placeholder="Add date..."
+                            onChange={this.handleDateChange}
+                        />
+                        <label htmlFor="addDate">Degree</label>
+                        <input
+                            id="newDegree"
+                            placeholder="Add a degree..."
+                            onChange={this.handleDegreeChange}
+                        />
+                        <label htmlFor="newLocation"> Location</label>
+                        <input
+                            id="newLocation"
+                            placeholder="Add location..."
+                            onChange={this.handleLocationChange}
+                        />
+                        <label htmlFor="newDescription">Description</label>
+                        <input
+                            id="newDescription"
+                            placeholder="Add a description..."
+                            onChange={this.handleDescriptionChange}
+                        />
+                        <button onClick={this.onSubmitEducation}>
+                            Submit education
+                        </button>
+                        <button
+                            className="edit-toggle"
+                            onClick={this.toggleEdit}
+                        >
+                            Cancel
+                        </button>
+                    </form>
+                )}
             </div>
         );
     }
