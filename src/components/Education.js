@@ -9,6 +9,7 @@ class Education extends Component {
             degree: "",
             date: "",
             location: "",
+            description: "",
             education: [
                 {
                     id: uniqid(),
@@ -16,11 +17,19 @@ class Education extends Component {
                     degree: "Web Development",
                     date: "Sep 2021 - Today",
                     location: "Argentina",
+                    description:
+                        "I dedicated the last months learning about different technologies to be able to work in web development",
                 },
             ],
             edit: false,
         };
     }
+
+    handleDescriptionChange = (e) => {
+        this.setState({
+            description: e.target.value,
+        });
+    };
 
     handleSchoolChange = (e) => {
         this.setState({
@@ -55,11 +64,13 @@ class Education extends Component {
                 degree: this.state.degree,
                 date: this.state.date,
                 location: this.state.location,
+                description: this.state.description,
             }),
             school: "",
             degree: "",
             date: "",
             location: "",
+            description: "",
         });
         this.toggleEdit();
     };
@@ -99,13 +110,14 @@ class Education extends Component {
                                 <div>
                                     <p>{edu.school}</p>
                                     <p>{edu.location}</p>
+                                    <p>{edu.description}</p>
                                 </div>
                             </div>
                             <button
                                 onClick={this.toggleEdit}
                                 className="edit-toggle"
                             >
-                                Edit
+                                Add Education
                             </button>
 
                             {edit && (
@@ -137,13 +149,16 @@ class Education extends Component {
                                         placeholder="Add location..."
                                         onChange={this.handleLocationChange}
                                     />
+                                    <label htmlFor="newDescription">Description</label>
+                                    <input id="newDescription" placeholder="Add a description..."
+                                    onChange={this.handleDescriptionChange}/>
                                     <button onClick={this.onSubmitEducation}>
                                         Submit education
                                     </button>
                                     <button
                                         className="edit-toggle"
                                         onClick={this.toggleEdit}
-                                    ></button>
+                                    >Cancel</button>
                                 </form>
                             )}
                         </div>
