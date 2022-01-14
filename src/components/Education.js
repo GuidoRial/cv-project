@@ -103,15 +103,18 @@ class Education extends Component {
                         <div
                             key={edu.id}
                             onClick={() => this.handleRemove(edu.id)}
-                        className="education-container">
-                            <div>
-                                <p>{edu.date}</p>
-                                <p>{edu.degree}</p>
+                            className="education-container"
+                        >
+                            <div className="left-column">
+                                <p className="edu-date">{edu.date}</p>
+                                <p className="edu-degree">{edu.degree}</p>
                             </div>
-                            <div>
-                                <p>{edu.school}</p>
-                                <p>{edu.location}</p>
-                                <p>{edu.description}</p>
+                            <div className="right-column">
+                                <p className="edu-school">{edu.school}</p>
+                                <p className="edu-location">{edu.location}</p>
+                                <p className="edu-description">
+                                    {edu.description}
+                                </p>
                             </div>
                         </div>
                     );
@@ -153,15 +156,13 @@ class Education extends Component {
                             placeholder="Add a description..."
                             onChange={this.handleDescriptionChange}
                         />
-                        <button onClick={this.onSubmitEducation}>
-                            Submit education
-                        </button>
                         <button
                             className="edit-toggle"
-                            onClick={this.toggleEdit}
+                            onClick={this.onSubmitEducation}
                         >
-                            Cancel
+                            Submit education
                         </button>
+
                     </form>
                 )}
             </div>

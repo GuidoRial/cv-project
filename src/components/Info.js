@@ -128,7 +128,7 @@ class Info extends Component {
                         <input
                             id="github"
                             type="text"
-                            placeholder="github"
+                            placeholder="Github User Name..."
                             onChange={this.handleGithubChange}
                         />
                         <button

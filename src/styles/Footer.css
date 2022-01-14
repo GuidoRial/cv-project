@@ -6,7 +6,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: skyblue;
+    background-image: linear-gradient(to left, skyblue, white);
     padding: 15px;
     font-size: 26px;
     gap: 5px;

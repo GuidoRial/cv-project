@@ -19,3 +19,31 @@
 .right-side {
     width: 75%;
 }
+
+input {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: rgba(54, 134, 165, 0.1);
+    width: 35%;
+    padding: 5px;
+}
+
+.edit-toggle {
+    border: none;
+    background-color: rgba(54, 134, 165);
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+}

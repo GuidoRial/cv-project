@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import uniqid from "uniqid";
+import "../styles/Skills.css"
 
 class Skills extends Component {
     constructor() {
@@ -35,7 +36,6 @@ class Skills extends Component {
                 {
                     id: uniqid(),
                     skill: "Team player",
-                    
                 },
                 {
                     id: uniqid(),
@@ -106,7 +106,12 @@ class Skills extends Component {
                             placeholder="Add a skill..."
                             onChange={this.handleSkillChange}
                         />
-                        <button onClick={this.onSubmitSkill}>Add Skill</button>
+                        <button
+                            className="edit-toggle"
+                            onClick={this.onSubmitSkill}
+                        >
+                            Add Skill
+                        </button>
                         <button
                             className="edit-toggle"
                             onClick={this.toggleEdit}

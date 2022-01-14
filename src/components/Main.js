@@ -3,7 +3,7 @@ import LeftSide from "./LeftSide";
 import Education from "./Education"
 import WorkExperience from "./WorkExperience";
 import styles from "../styles/Main.css";
-//Tengo que hacer todos los imports aca
+
 class Main extends Component {
     constructor() {
         super();

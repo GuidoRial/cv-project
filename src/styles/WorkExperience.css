@@ -1,9 +1,9 @@
-#education > h2 {
+#experience > h2 {
     border-top: 1px solid;
     border-bottom: 3px solid;
 }
 
-.education-container {
+.experience-container {
     display: flex;
     gap: 15px;
 }
@@ -16,11 +16,12 @@
     width: 75%;
 }
 
-.edu-degree {
+.exp-position {
     font-weight: bold;
     color: rgb(54, 134, 165);
 }
 
-.edu-school {
+.exp-company {
     font-weight: bold;
 }
+

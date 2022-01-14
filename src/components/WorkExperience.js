@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import uniqid from "uniqid";
+import "../styles/WorkExperience.css"
 
 class WorkExperience extends Component {
     constructor() {
@@ -92,14 +93,14 @@ class WorkExperience extends Component {
                         <div
                             key={exp.id}
                             onClick={() => this.handleRemove(exp.id)}
-                        >
-                            <div>
-                                <p>{exp.date}</p>
-                                <p>{exp.position}</p>
+                        className="experience-container">
+                            <div className="left-column">
+                                <p className="exp-date">{exp.date}</p>
+                                <p className="exp-position">{exp.position}</p>
                             </div>
-                            <div>
-                                <p>{exp.company}</p>
-                                <p>{exp.description}</p>
+                            <div className="right-column">
+                                <p className="exp-company">{exp.company}</p>
+                                <p className="exp-description">{exp.description}</p>
                             </div>
                         </div>
                     );
@@ -134,14 +135,8 @@ class WorkExperience extends Component {
                             placeholder="Add a description..."
                             onChange={this.handleDescriptionChange}
                         />
-                        <button onClick={this.onSubmitWorkExperience}>
+                        <button onClick={this.onSubmitWorkExperience} className="edit-toggle">
                             Submit work experience
-                        </button>
-                        <button
-                            className="edit-toggle"
-                            onClick={this.toggleEdit}
-                        >
-                            Cancel
                         </button>
                     </form>
                 )}
