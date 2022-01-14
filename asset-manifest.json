@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GuidoRial/cv-project/static/css/main.c109ab99.css",
+    "main.js": "/GuidoRial/cv-project/static/js/main.ea6490e7.js",
+    "static/js/787.21e93e1b.chunk.js": "/GuidoRial/cv-project/static/js/787.21e93e1b.chunk.js",
+    "index.html": "/GuidoRial/cv-project/index.html",
+    "main.c109ab99.css.map": "/GuidoRial/cv-project/static/css/main.c109ab99.css.map",
+    "main.ea6490e7.js.map": "/GuidoRial/cv-project/static/js/main.ea6490e7.js.map",
+    "787.21e93e1b.chunk.js.map": "/GuidoRial/cv-project/static/js/787.21e93e1b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c109ab99.css",
+    "static/js/main.ea6490e7.js"
+  ]
+}
